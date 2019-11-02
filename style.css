@@ -1,0 +1,134 @@
+.lable {
+  display: flex;
+  justify-content: center;
+}
+.lable_pic {
+  width:50px;
+  height:50px;
+}
+header {
+	background-color:#3CB371;
+}
+.navbar {
+  background-color :#98FB98;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+#description {
+  display: flex;
+  font-size:15px;
+}
+.text {
+  font-size:20px;
+}
+.description_name {
+  color: #800080;
+  position: relative
+}
+.descriotion_photo {
+  width: 100px;
+  height: 200px;
+}
+.table-container {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+  overflow: auto;
+  border-collapse: collapse; 
+  font-size:15px;
+}
+.carpentry_photo {
+  width:150px;
+  height:150px;
+}
+.bench_photo {
+  width:150px;
+  height:200px;	
+}
+.mallet_photo {
+  width:150px;
+  height:200px;	
+}
+#buy {
+  font-size:15px;
+}
+.properties {
+	display:none;
+}
+.review_photo {
+  width:50px;
+  height:50px;
+  float:left;
+}
+.contacts_text {
+  display: flex;
+  justify-content: center;
+  font-size:20px;
+}
+.num {
+	font-size:10px;
+}
+.soc {
+  width:20px;
+  height:20px;
+}
+footer {
+	background-color:#808080;
+}
+@media screen and (min-width: 600px) {
+  .lable_pic {
+  width:100px;
+  height:100px;
+}
+  .lable_text{
+    font-size:80px;
+  }
+  .navbar  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #description {
+    font-size:20px;
+  }
+  .text {
+    font-size:25px;
+  }
+  .table-container {
+  	font-size: 20px;
+  }
+  .carpentry_photo {
+  width:250px;
+  height:250px;
+}
+  .bench_photo {
+    width:250px;
+    height:350px;	
+  }
+  .mallet_photo {
+    width:250px;
+    height:350px;	
+  }
+  #buy {
+    font-size:20px;
+  }
+  .review_photo {
+  width:100px;
+  height:100px;
+  }
+  .reviews {
+  	font-size: 15px;
+  }
+  .review_name {
+  	font-size: 20px;
+  }
+  .num {
+	font-size:15px;
+  }
+  .soc {
+    width:50px;
+    height:50px;
+  }
+
