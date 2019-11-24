@@ -91,7 +91,7 @@
 .doublePic {
     box-shadow: 0 0 5px;
     padding: 10px;
-    margin: -150px 20px 0 20px;
+    margin: 30px 20px 0 20px;
     background-color: white;
     text-align:center;
 }
@@ -109,6 +109,7 @@ text-align: right;
   display:inline-block;
   position:relative;
   margin-left: 45px;
+  margin-top: 20px;
 }
 .image .imageText {
 display:block;
@@ -137,9 +138,13 @@ height: 8%;
 .imageBlock {
   margin-right: 10px;
 }
+.advantages {
+  margin-top: 10px;
+}
 .advantages img {
 float: left;
 margin-right: 10px;
+margin-top: 10px;
 }
 .advantagesTitle {
   font-weight:bold;
@@ -153,14 +158,14 @@ margin-right: 10px;
 }
 .companyImg {
   margin-right: 10px;
-  width: 23%;
+  width: 20%;
 }
 .reviews {
   background: url('img/IMG_4385.jpg');
-  height: 500px;
+  height: 300px;
 }
 .blockSlider {
- max-width:1000px;
+ max-width:300px;
   margin-left: auto;
     margin-right: auto;
      background-color: white;
@@ -205,4 +210,25 @@ background-color: #786f77;
   height: 30px;
   float: left;
   margin:10px 0 0 10px;
+}
+.unknown {
+  margin-top: 10px;
+}
+@media screen and (min-width: 728px) {
+  .doublePic {
+    margin: -150px 20px 0 20px;
+}
+.advantages img {
+margin-top: -10px;
+}
+.companyImg {
+  margin-right: 10px;
+  width: 23%;
+}
+.blockSlider {
+ max-width:1000px;
+  margin-left: auto;
+    margin-right: auto;
+     background-color: white;
+}
 }
