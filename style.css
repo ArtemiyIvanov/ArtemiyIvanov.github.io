@@ -308,4 +308,8 @@ margin-top: -10px;
   height:600px;
    margin: 0 0 0 450px;
   }
+
+.popup {
+  position:absolute;
+}
 }
