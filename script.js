@@ -25,12 +25,12 @@ $('.show_popup').click(function() {
     var popup_id = $('#' + $(this).attr("rel")); 
     $(popup_id).show();
     $('.overlay_popup').show(); 
-    $('.cross').show();
     history.pushState(null, '', 'form');
 }) 
 $('.overlay_popup').click(function() { 
     $('.overlay_popup, .popup').hide();
     history.back();
+    history.go(-1);
 })
 $(function(){
     $(".ajaxForm").submit(function(e){
