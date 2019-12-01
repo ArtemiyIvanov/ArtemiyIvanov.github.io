@@ -37,6 +37,9 @@ $('.overlay_popup').click(function() {
     $('.overlay_popup, .popup').hide();
     history.back();
 })
+window.onpopstate = function(event) {
+$('.overlay_popup, .popup').hide();
+}
 function rem() {
 let fio = document.getElementById('fio').value;
 let tel = document.getElementById('tel').value;
@@ -45,6 +48,7 @@ localStorage.setItem('fio', fio);
 localStorage.setItem('tel', tel);
 localStorage.setItem('com', com);
 }
+
 function forget() {
 localStorage.clear();
 }
