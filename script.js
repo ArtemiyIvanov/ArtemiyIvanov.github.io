@@ -21,7 +21,7 @@ $('.sl').slick({
     }
   ]
 });
-window.onpopstate = function(event) {
+$('popstate') click.function() {
   $('.overlay_popup, .popup').hide();
   history.back();
 $('.show_popup').click(function() { 
