@@ -69,9 +69,9 @@
     <div class="overlay_popup"></div>
     <div class="popup" id="popup1">
       <div class="object">
-        <form class="ajaxForm" action="https://formcarry.com/s/Vk61WNeO0Vi" method="POST" accept-charset="UTF-8">
-          <p><input type="text" id="fio" name="fio" placeholder="ФИО" required></p>
-          <p><input type="tel" id="tel" name="phonenumber" placeholder="Телефон" required></p>
+        <form class="ajaxForm" action="https://formcarry.com/s/Vk61WNeO0Vi" method="POST" accept-charset="UTF-8" onSubmit="forget()">
+          <p><input type="text" id="fio" name="name" placeholder="ФИО" required onChange="rem()"></p>
+          <p><input type="tel" id="tel" name="phonenumber" placeholder="Телефон" required onChange="rem()"></p>
           <p><select name="region" id="selecter">
               <option value="none" hidden="">Регион</option>
               <option value="Краснодарский край">Краснодарский край</option>
@@ -79,7 +79,7 @@
               <option value="Республика Алтай">Республика Алтай</option>
               <option value="Тюменская область">Тюменская область</option>
             </select></p>
-          <p><textarea rows="10" cols="45" name="message"></textarea></p>
+          <p><textarea id="com" rows="10" cols="45" name="message" onChange="rem()"></textarea></p>
           <input type="submit" name="отправить" class="green_btn">
         </form>
       </div>

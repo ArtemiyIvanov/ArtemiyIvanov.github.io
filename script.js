@@ -26,11 +26,28 @@ $('.show_popup').click(function() {
     $(popup_id).show();
     $('.overlay_popup').show(); 
     history.pushState(null, '', 'form');
+    let newfio = localStorage.getItem('fio');
+    let newtel = localStorage.getItem('tel');
+    let newcom = localStorage.getItem('com');
+    document.getElementById('fio').value = newfio;
+    document.getElementById('tel').value = newtel;
+    document.getElementById('com').value = newcom;
 }) 
 $('.overlay_popup').click(function() { 
     $('.overlay_popup, .popup').hide();
     history.back();
 })
+function rem() {
+let fio = document.getElementById('fio').value;
+let tel = document.getElementById('tel').value;
+let com = document.getElementById('com').value;
+localStorage.setItem('fio', fio);
+localStorage.setItem('tel', tel);
+localStorage.setItem('com', com);
+}
+function forget() {
+localStorage.clear();
+}
 $(function(){
     $(".ajaxForm").submit(function(e){
         e.preventDefault();
