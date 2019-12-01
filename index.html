@@ -71,15 +71,15 @@
       <div class="object">
         <form class="ajaxForm" action="https://formcarry.com/s/Vk61WNeO0Vi" method="POST" accept-charset="UTF-8">
           <p><input type="text" id="fio" name="fio" placeholder="ФИО" required></p>
-          <p><input type="tel" id="tel" name="phonenumber" placeholder="Телефон" required></p>
+          <p><input type="tel" id="tel" name="phonenumber" placeholder="Телефон" required onchange="store()"></p>
           <p><select name="region" id="selecter">
               <option value="none" hidden="">Регион</option>
               <option value="Краснодарский край">Краснодарский край</option>
-              <option value="Оренбургская область">Крокодил Гена</option>
+              <option value="Оренбургская область">Оренбургская область</option>
               <option value="Республика Алтай">Республика Алтай</option>
               <option value="Тюменская область">Тюменская область</option>
             </select></p>
-          <p><textarea rows="10" cols="45" name="message"></textarea></p>
+          <p><textarea id="com" rows="10" cols="45" name="message"></textarea></p>
           <input type="submit" name="отправить" class="green_btn">
         </form>
       </div>
