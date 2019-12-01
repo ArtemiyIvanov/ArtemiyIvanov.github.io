@@ -54,10 +54,3 @@ $(function(){
         });
     });
 });
-function remember() {
-let fio = document.getElementById('fio').value;
-let tel = document.getElementById('tel').value;
-let com = document.getElementById('com').value;
-localStorage.setItem('fio', name);
-localStorage.setItem('tel', mail);
-localStorage.setItem('com', comment);
