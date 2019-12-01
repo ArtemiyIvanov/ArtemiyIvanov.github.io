@@ -3,7 +3,7 @@
     src: url('Open Sans.ttf');
    }
    body {
-    font-family:'OpenSans';
+    font-family:'Open Sans';
    }
    li  {
     list-style-type: none; 
@@ -40,7 +40,6 @@
     max-height: 100vh;
     overflow: hidden;
     position: relative;
-
     background: url("cover.jpg") center no-repeat;
     background-size: cover;
 }
@@ -214,6 +213,79 @@ background-color: #786f77;
 .unknown {
   margin-top: 10px;
 }
+/*fom*/
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.content {
+  text-align: center;
+}
+
+
+button {
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background-color: #1fab10;
+}
+
+input, textarea {
+  color: #494949;
+  border: 1px solid #0000;
+  background: #e6e7eb;
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 5px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+
+.green_btn {
+    background-color:#1fab10;
+}
+form .green_btn {
+cursor: pointer;    
+color: #fff;
+}
+
+
+.overlay_popup {
+  display:none;
+  position:fixed;
+  z-index: 999;
+  top:0;
+  right:0; 
+  left:0;
+  bottom:0;
+  background:#000; 
+  opacity:0.5;
+}
+
+.popup {
+  display: none;
+  z-index: 1000;
+  width:50%;
+  position:fixed;
+}
+
+
+.object{
+    width: 375px;
+    height: 550px;
+    background-color: white;
+    padding: 50px 70px;
+    border: 1px solid #55acee;
+    margin: 0 0 0 7px;
+}
 @media screen and (min-width: 728px) {
   .doublePic {
     margin: -150px 20px 0 20px;
@@ -231,4 +303,7 @@ margin-top: -10px;
     margin-right: auto;
      background-color: white;
 }
+.object{
+   margin: 0 0 0 450px;
+  }
 }

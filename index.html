@@ -58,10 +58,31 @@
 
   		    </div>
   		    <div class="call col-md-3 d-none d-md-block">
-  		    	<a id="call" href="#" >заказать звонок</a>
+  		    	<!-- <a id="call" href="#" >заказать звонок</a> -->
 
   		    </div>
   		</div>
+    </div>
+      <div class="content">
+      <button class="show_popup green_btn" rel="popup1">заказать звонок</button>
+    </div>
+    <div class="overlay_popup"></div>
+    <div class="popup" id="popup1">
+      <div class="object">
+        <form class="ajaxForm" action="https://formcarry.com/s/Vk61WNeO0Vi" method="POST" accept-charset="UTF-8">
+          <p><input type="text" id="fio" name="fio" placeholder="ФИО" required></p>
+          <p><input type="tel" id="tel" name="phonenumber" placeholder="Телефон" required></p>
+          <p><select name="region" id="selecter">
+              <option value="none" hidden="">Регион</option>
+              <option value="Краснодарский край">Краснодарский край</option>
+              <option value="Оренбургская область">Крокодил Гена</option>
+              <option value="Республика Алтай">Республика Алтай</option>
+              <option value="Тюменская область">Тюменская область</option>
+            </select></p>
+          <p><textarea rows="10" cols="45" name="message"></textarea></p>
+          <input type="submit" name="отправить" class="green_btn">
+        </form>
+      </div>
     </div>
 
 
@@ -515,6 +536,7 @@
 <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </body>
 
 </html>
