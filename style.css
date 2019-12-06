@@ -1,315 +1,134 @@
-@font-face  {
-    font-family:Open Sans;
-    src: url('Open Sans.ttf');
-   }
-   body {
-    font-family:'Open Sans';
-   }
-   li  {
-    list-style-type: none; 
-   }
-.brand {
-  color: #1fab10;
+.lable {
+  display: flex;
+  justify-content: center;
 }
-   .header_links li:before  {
-    content: "✓"; 
-    color: #1fab10;
-   }
-  li a {
-	text-decoration:none !important;
-   }
-  .connect {
-    color: #1fab10;
-   }
-   .link {
-    color:#786f77;
-   }
-   .call  {
-    margin-top: 30px;
-   }
-   #call  {
-   	padding: 6px;
-   	color: white;
-   	background: #1fab10;
-   	font-size: 20px;
-   }
-   header  {
-   	background: #f5f6f8;
-   }
-   .intro {
-    max-height: 100vh;
-    overflow: hidden;
-    position: relative;
-    background: url("cover.jpg") center no-repeat;
-    background-size: cover;
+.lable_pic {
+  width:50px;
+  height:50px;
 }
-
-.intro_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+header {
+	background-color:#3CB371;
 }
-
- .intro_title1 {
-    margin: 0;
-    font-size: 45px;
-    color: white;
-    text-align: center;
+.navbar {
+  background-color :#98FB98;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
 }
-.intro_title2 {
-    margin: 0;
-    font-size: 20px;
-    color: white;
-    text-align: center;
+#description {
+  display: flex;
+  font-size:15px;
 }
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.text {
+  font-size:20px;
 }
-
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
+.description_name {
+  color: #800080;
+  position: relative
 }
-
-.video_media {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+.descriotion_photo {
+  width: 100px;
+  height: 200px;
 }
-.doublePic {
-    box-shadow: 0 0 5px;
-    padding: 10px;
-    margin: 30px 20px 0 20px;
-    background-color: white;
-    text-align:center;
-}
-.completedProjects {
-  margin-top: 100px;
-}
-.completedProjectsText {
+.table-container {
+  display: flex;
   text-align: center;
+  width: 100%;
+  overflow-y: auto;
+  overflow: auto;
+  border-collapse: collapse; 
+  font-size:15px;
 }
-.allProjects {
- display: block;
-text-align: right;
+.carpentry_photo {
+  width:150px;
+  height:150px;
 }
-.image {
-  display:inline-block;
-  position:relative;
-  margin-left: 45px;
-  margin-top: 20px;
+.bench_photo {
+  width:150px;
+  height:200px;	
 }
-.image .imageText {
-display:block;
-position:absolute;
-left:0;
-bottom:0;
-width:100%;
-color:white;
-background: rgba(0,0,0,0.4);
+.mallet_photo {
+  width:150px;
+  height:200px;	
 }
-.imagePng {
-width: 8%;
-height: 8%;
+#buy {
+  font-size:15px;
 }
-.image li {
-  margin-right: 8px;
-   display: inline;
-   color: #C0C0C0;
-  font-weight:bold;
+.properties {
+	display:none;
 }
-.image a {
-  color: #1fab10;
-  text-decoration:none !important;
-  font-weight:bold;
+.review_photo {
+  width:50px;
+  height:50px;
+  float:left;
 }
-.imageBlock {
-  margin-right: 10px;
+.contacts_text {
+  display: flex;
+  justify-content: center;
+  font-size:20px;
 }
-.advantages {
-  margin-top: 10px;
-}
-.advantages img {
-float: left;
-margin-right: 10px;
-margin-top: 10px;
-}
-.advantagesTitle {
-  font-weight:bold;
-}
-.advantagesText {
-  color: #786f77;
-  margin:auto;
-}
-.completedProjects {
-  background: url('img/')
-}
-.companyImg {
-  margin-right: 10px;
-  width: 20%;
-}
-.reviews {
-  background: url('img/IMG_4385.jpg');
-  height: 300px;
-}
-.blockSlider {
- max-width:300px;
-  margin-left: auto;
-    margin-right: auto;
-     background-color: white;
-}
-.sl_slide {
-  position: relative;
-  background-color: white;
-}
-.newsDate {
-  color: #1fab10;
-  font-size: 25px;
-  font-weight: bold;
-}
-.newsCont {
-  color: #786f77;
-}
-.buttonLink {
-background-color: #786f77;
-
-}
-.buttonLink a {
-  color: #000000;
-  padding: 5px;
-  text-decoration:none !important;
-}
-.buttonLink a:hover {
-  background: #1fab10;
-}
-#contact {
-  padding: 6px;
-  color: white;
-  background: #1fab10;
-  font-size: 20px;
-  float: left;
-  margin-right: 10px;
-}
-#unheader {
-  background: #f5f6f8;
+.num {
+	font-size:10px;
 }
 .soc {
-  width: 30px;
-  height: 30px;
-  float: left;
-  margin:10px 0 0 10px;
+  width:20px;
+  height:20px;
 }
-.unknown {
-  margin-top: 10px;
+footer {
+	background-color:#808080;
 }
-/*fom*/
-textarea {
-  width: 100%;
-  resize: none;
+@media screen and (min-width: 600px) {
+  .lable_pic {
+  width:100px;
+  height:100px;
 }
-
-.content {
-  text-align: center;
+  .lable_text{
+    font-size:80px;
+  }
+  .navbar  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #description {
+    font-size:20px;
+  }
+  .text {
+    font-size:25px;
+  }
+  .table-container {
+  	font-size: 20px;
+  }
+  .carpentry_photo {
+  width:250px;
+  height:250px;
 }
-
-
-button {
-  padding: 15px 25px;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 20px;
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  border: 0;
-  background-color: #1fab10;
-}
-
-input, textarea {
-  color: #494949;
-  border: 1px solid #0000;
-  background: #e6e7eb;
-  font-size: 14px;
-  margin: 0 0 10px;
-  padding: 5px;
-  width: 100%;
-  line-height: 1.5;
-}
-
-
-.green_btn {
-    background-color:#1fab10;
-}
-form .green_btn {
-cursor: pointer;    
-color: #fff;
-}
-
-
-.overlay_popup {
-  display:none;
-  position:fixed;
-  z-index: 999;
-  top:0;
-  right:0; 
-  left:0;
-  bottom:0;
-  background:#000; 
-  opacity:0.5;
-}
-
-.popup {
-  display: none;
-  z-index: 1000;
-  width:50%;
-  position:fixed;
-}
-
-
-.object{
-    width: 310px;
-    height: 550px;
-    background-color: white;
-    padding: 50px 70px;
-    border: 1px solid #55acee;
-    margin: 0 0 0 7px;
-}
-@media screen and (min-width: 728px) {
-  .doublePic {
-    margin: -150px 20px 0 20px;
-}
-.advantages img {
-margin-top: -10px;
-}
-.companyImg {
-  margin-right: 10px;
-  width: 23%;
-}
-.blockSlider {
- max-width:1000px;
-  margin-left: auto;
-    margin-right: auto;
-     background-color: white;
-}
-.object{
-  width: 600px;
-  height:600px;
-   margin: 0 0 0 450px;
+  .bench_photo {
+    width:250px;
+    height:350px;	
+  }
+  .mallet_photo {
+    width:250px;
+    height:350px;	
+  }
+  #buy {
+    font-size:20px;
+  }
+  .review_photo {
+  width:100px;
+  height:100px;
+  }
+  .reviews {
+  	font-size: 15px;
+  }
+  .review_name {
+  	font-size: 20px;
+  }
+  .num {
+	font-size:15px;
+  }
+  .soc {
+    width:50px;
+    height:50px;
   }
 
-.popup {
-  position:absolute;
-}
-}
